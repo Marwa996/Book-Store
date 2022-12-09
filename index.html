@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BookStore</title>
+     
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+  </head>
+  <body>
+
+  <!-----------------------------------Start of the list--------------------------------------->
+
+                                        <!-- dropdown -->
+  <div class="dropdown" style="float:left;">
+    <button class="dropbtn">Orderd By</button>
+    <div class="dropdown-content" style="left:0;">
+    <a href="#" style="color: #5682c0;">Default</a>
+    <a href="#">Price low to high</a>
+    <a href="#">Price high to low</a>
+    </div>
+  </div>
+  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+                                        <!--Checkbox-->
+     <div class="Checkbox">
+    <h2 style="font: size 15px; font: 1.5em sans-serif; padding: 12px; " > Category</h2><br/>
+    <label class="container">All
+    <input type="radio" checked="checked" name="radio">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Novel
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Short Sory
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+    </label>
+     </div> <br/>       
+     
+                                     <!--price range-->
+    <h2 style="font: size 15px; font: 1.5em sans-serif; padding: 12px; "> Price </h2>                 
+    <div class="slider">
+    <input type="range" min="10" max="100" value="100" oninput="rangeValue.innerText = this.value"><br/><br>
+    <p id="rangeValue">100</p>
+    </div>
+
+  <!-- ---------------------------------End of the list------------------------------------- -->
+<!-- --------------------------------Start Of Footer--------------------------------------- -->
+<footer>
+  <div class="icons">
+      <div class="text">
+    <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.Linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+  </div>
+</footer>
+<!-- --------------------------------End Of Footer--------------------------------------- -->
+
+
+
+</body>
+</html>

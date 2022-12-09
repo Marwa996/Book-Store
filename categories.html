@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store </title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+<!-- nada -->
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+<!-- marwa -->
+    
+    
+    <link rel="stylesheet" href="home.css">
+    
+  </head>
+  <body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <div class="header-1">
+
+        <a href="#" class="logo"> <i class="fas fa-book"></i> Book Store </a>
+
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            
+            <a href="cart.html" class="fas fa-shopping-cart"><span class="icon"> 0</span></a>
+            <a href="login.html"><div id="login-btn" class="fas fa-user" ></div>
+        </div>
+
+    </div>
+
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="#home">All</a>
+            <a href="#featured" onClick="displayCategory()">MongoDB</a>
+            <a href="#arrivals" onclick="dispalyCategory2()">Algorithms</a>
+            <a href="#reviews">Machine Learning</a>
+            <a href="#blogs">Microsoft Office</a>
+            <a href="#blogs">Data Science</a>
+            <a href="#blogs">Hacking</a>
+        </nav>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- bottom navbar  -->
+
+<nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#featured" class="fas fa-list"></a>
+    <a href="#arrivals" class="fas fa-tags"></a>
+    <a href="#reviews" class="fas fa-comments"></a>
+    <a href="#blogs" class="fas fa-blog"></a>
+</nav>
+
+
+</div>
+
+
+<!-- --------------------------------Start Of Footer--------------------------------------- -->
+<footer>
+    <div class="icons">
+        <div class="text">
+      <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.Linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+    </div>
+</footer>
+  <!-- --------------------------------End Of Footer--------------------------------------- -->
+
+
+  <!-----------------------------------Start of the list--------------------------------------->
+
+                                        <!-- dropdown -->
+  <!-- <div class="dropdown">
+    <button class="dropbtn">Orderd By</button>
+    <div class="dropdown-content" style="left:0;">
+    <a href="#" style="color: #5682c0;">Default</a>
+    <a href="#">Price low to high</a>
+    <a href="#">Price high to low</a>
+    </div>
+  </div> -->
+  <!-- <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> -->
+<div id="block">
+                                        <!--Checkbox-->
+     <div class="Checkbox">
+    <h2 style=" font: 2.5rem sans-serif; padding: 12px; " ><b> Order By</b></h2><br/>
+    <label class="container">Default
+    <input type="radio" checked="checked" name="radio">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">low to high
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">high to low
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+    </label>
+   
+     </div> <br/>       
+     
+                                     <!--price range-->
+    <h2 style=" font: 2.5em sans-serif; padding: 12px; "><b> Price </b></h2>                 
+    <div class="slider">
+    <input type="range" min="0" max="100" step="10" value="100" oninput="rangeValue.innerText = this.value"><br/><br>
+    <p id="rangeValue">100</p>
+    </div>
+</div>
+  <!-- ---------------------------------End of the list------------------------------------- -->
+  <div id="container"></div>
+  <script src="categories.js"></script>

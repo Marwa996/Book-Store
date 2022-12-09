@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<title>Book Register</title>
+		<link rel="stylesheet" href="bootstrap.min.css" />
+		<link rel="stylesheet" href="login.css" />
+		
+	</head>
+	<body>
+		
+		
+		
+								<form>
+									<div class="form-group my-2">
+										<h4 style="color: #999;">First Name</h4>
+										<input
+											class="form-control"
+											type="text"
+											name="firstName"
+											id="firstName"
+											placeholder="First name"
+											required
+										/>
+										<small
+											id="firstNameAlert"
+											class="my-1 d-none text-danger"
+											>this field is required</small
+										>
+									</div>
+									<div class="form-group my-2">
+										<h4 style="color: #999;">Last Name</h4>
+										<input
+											class="form-control"
+											type="text"
+											name="lastName"
+											id="lastName"
+											placeholder="Last name"
+											required
+										/>
+										<small
+											id="lastNameAlert"
+											class="my-1 d-none text-danger"
+											>this field is required</small
+										>
+									</div>
+									<div class="form-group my-2">
+										<h4 style="color: #999;">Email</h4>
+										<input
+											class="form-control"
+											type="email"
+											name="email"
+											id="email"
+											placeholder="Email address"
+											required
+										/>
+										<small
+											id="emailAlert"
+											class="my-1 d-none text-danger"
+											>Enter valid email address</small
+										>
+									</div>
+									<div class="form-group my-2">
+										<h4 style="color: #999;">Password</h4>
+										<input
+											class="form-control"
+											type="password"
+											name="password"
+											id="password"
+											placeholder="Create password"
+											required
+										/>
+										<small
+											id="passwordAlert"
+											class="my-1 d-none text-danger"
+											>Password must be between 7 to 16
+											characters which contain only
+											characters, numeric digits,
+											underscore and first character must
+											be a letter</small
+										>
+									</div>
+									<div class="form-group my-2">
+										<h4 style="color: #999;">Confirm Password</h4>
+										<input
+											class="form-control"
+											type="password"
+											name="confirmPassword"
+											id="confirmPassword"
+											placeholder="Confirm password"
+											required
+										/>
+										<small
+											id="confirmPasswordAlert"
+											class="my-1 d-none text-danger"
+											>Password must be between 7 to 16
+											characters which contain only
+											characters, numeric digits,
+											underscore and first character must
+											be a letter</small
+										>
+									</div>
+								 
+									<div class="form-group">
+										<button
+											type="submit"
+											class="btn btn-warning text-uppercase mt-2 text-white btn-block"
+											style="background-color:#999"
+										>
+											Sign up
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		<script src="bootstrap.bundle.min.js"></script>
+		<script src="register.js"></script>
+	</body>
+</html>
